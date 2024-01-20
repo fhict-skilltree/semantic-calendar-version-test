@@ -37,5 +37,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          version: ${{ steps.release_version.outputs.version }}
+          version: ${{ steps.release.outputs.version }}
           publish: true
