@@ -27,3 +27,10 @@ jobs:
       - name: Use the previous version
         run: |
           echo ${{ steps.version.outputs.previous-version }}
+
+      - name: Create release
+        id: create_release
+        uses: release-drafter/release-drafter@v5
+        with:
+          version: ${{ steps.release_version.outputs.version }}
+          publish: true
