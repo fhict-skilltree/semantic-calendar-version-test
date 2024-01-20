@@ -23,6 +23,9 @@ jobs:
       - name: Semantic Calendar Version
         id: release_version
         uses: lukashornych/semantic-calendar-version@v1.1.3
+        with:
+          release-branch: main
+          dev-branch: develop
 
       - name: Use the version
         run: |
