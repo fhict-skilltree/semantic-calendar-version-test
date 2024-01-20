@@ -4,7 +4,8 @@ name: Semantic Calendar Version
 on:
   push:
     branches:
-      - master
+      - main
+      - develop
 
 jobs:
   release:
